@@ -1,9 +1,8 @@
 #include<stdio.h>
-main()
+void main()
 {
 int i,j,n,bu[10],wa[10],tat[10],t,ct[10],max;
 float awt=0,att=0,temp=0;
-clrscr();
 printf("Enter the no of processes -- ");
 scanf("%d",&n);
 for(i=0;i<n;i++)
@@ -21,7 +20,8 @@ max=bu[i];
 for(j=0;j<(max/t)+1;j++)
 for(i=0;i<n;i++)
 if(bu[i]!=0)
-if(bu[i]<=t) {
+if(bu[i]<=t)
+{
 
 tat[i]=temp+bu[i];
 temp=temp+bu[i];
@@ -40,4 +40,4 @@ printf("\nThe Average Waiting time is -- %f ",awt/n);
 printf("\n\tPROCESS\t BURST TIME \t WAITING TIME\tTURNAROUND TIME\n");
 for(i=0;i<n;i++)
 printf("\t%d \t %d \t\t %d \t\t %d \n",i+1,ct[i],wa[i],tat[i]);
-getch();}
+}
