@@ -1,8 +1,8 @@
 #include<stdio.h>
-main()
+void main()
 {
-int t[20], n, I, j, tohm[20], tot=0; float avhm;
-clrscr();
+int t[20], n, I, j, tohm[20], tot=0; 
+float avhm;
 printf(“enter the no.of tracks”);
 scanf(“%d”,&n);
 
@@ -22,5 +22,4 @@ printf(“Tracks traversed\tDifference between tracks\n”);
 for(i=1;i<n+1;i++)
 printf(“%d\t\t\t%d\n”,t*i+,tohm*i+);
 printf("\nAverage header movements:%f",avhm);
-getch();
 }
