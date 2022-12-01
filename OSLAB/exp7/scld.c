@@ -3,11 +3,12 @@ struct
 {
 char dname[10],fname[10][10];
 int fcnt;
-}dir[10];
+}
+dir[10];
 void main()
 {
 int i,ch,dcnt,k; char
-f[30], d[30]; clrscr();
+f[30], d[30];
 dcnt=0;
 while(1)
 {
@@ -95,5 +96,4 @@ break;
 default:exit(0);
 }
 }
-getch();
 }
